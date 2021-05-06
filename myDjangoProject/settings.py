@@ -27,6 +27,8 @@ SECRET_KEY = 'django-insecure-cnxz#a2n8r7^l0&yicffd4&qe2xnfdnh4b*m#2y1v6yd@g#b5-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED HOSTS: localhost and pythonanywhere website
+
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
@@ -39,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig'                                   #blog app
+    'blog.apps.BlogConfig',                                   # blog app reference
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
